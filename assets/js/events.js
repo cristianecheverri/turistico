@@ -23,7 +23,11 @@ const estudiante = {
     "genero": "M"
 }
 
-const estudianteHtml = "<ul><li>Nombre: " + estudiante.nombre + "</li></ul>";
+const estudianteHtml = `<ul>
+        <li>Nombre: ${estudiante.nombre}</li>
+        <li>Edad: ${estudiante.edad}</li>
+        <li>Genero: ${estudiante.genero}</li>
+    </ul>`;
 console.log(estudianteHtml);
 
 const divEstudiante = document.getElementById('estudiante');
